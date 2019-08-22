@@ -1,13 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Form from './components/Form'
+
+import React from "react";
+import "./App.css";
+import OnboardingForm from "./components/Form";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome Aboard!</h1>
-      </header>
+      <OnboardingForm />
     </div>
   );
 }
