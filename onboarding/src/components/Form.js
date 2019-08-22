@@ -69,8 +69,7 @@ const formikPassValues = withFormik({
   }),
 
   handleSubmit(values, { setStatus, resetForm }) {
-    axios
-      .post("https://reqres.in/api/users", values)
+    axios.post("https://reqres.in/api/users", values)
       .then(res => {
         console.log("Response here!", res);
         setStatus(res.data);
