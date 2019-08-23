@@ -56,14 +56,14 @@ const formikPassValues = withFormik({
   validationSchema: Yup.object().shape({
     name: Yup.string()
       .min(1, "LIES")
-      .max(20, "Your name is too long pls change")
+      .max(20, "Your name is too long pls change it")
       .required("please enter your name"),
     email: Yup.string()
       .email()
-      .required("must be an email"),
+      .required("THaTS NoT EvEn A ReAl EmAIl"),
     password: Yup.string()
-      .min(6, "Do better")
-      .max(20, "Woah slow down")
+      .min(6, "password must be 6 charecters long MINIMUM thats six, Auf Duetsch Sechs two less than Ocho which would be Seis pls... learn 2 read thx")
+      .max(20, "Lets be real here, you probably wont remember this")
       .required(),
     terms: Yup.boolean().oneOf([true], "You must accept the terms of service")
   }),
